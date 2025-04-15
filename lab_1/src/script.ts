@@ -1,3 +1,6 @@
+// Мельничук Максим
+// Варіант 9
+
 // Площа квадрата
 const sideInput = document.getElementById("side") as HTMLInputElement;
 const calcAreaBtn = document.getElementById("calcAreaBtn") as HTMLButtonElement;
