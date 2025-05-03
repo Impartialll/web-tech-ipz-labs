@@ -8,6 +8,7 @@ import realLogo from "../assets/clubs/real.png";
 import manCityLogo from "../assets/clubs/manCity.png";
 import liverpoolLogo from "../assets/clubs/liverpool.png";
 
+// Створення типу для клубів
 interface Club {
   id: number;
   name: string;
@@ -18,6 +19,7 @@ interface Club {
   team: string[];
 }
 
+// Створення клубів
 const clubs: Club[] = [
   {
     id: 1,
@@ -93,11 +95,13 @@ const clubs: Club[] = [
   },
 ];
 
+// Коли сторінка активна - назва документу буде Football Clubs
 function FootballClubPage() {
   React.useEffect(() => {
     document.title = "Football Clubs";
   }, []);
 
+  // Повертає сторінку із компонентами, які застосовуються разом з масивом даних
   return (
     <div className="football-page-wrapper">
       <h1 className="page-title">Футбольні клуби</h1>
