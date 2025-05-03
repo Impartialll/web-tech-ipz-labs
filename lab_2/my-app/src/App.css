@@ -207,3 +207,7 @@ ul li {
   margin-top: 10px;
   border-radius: 8px;
 }
+
+ul {
+  text-align: left;
+}
