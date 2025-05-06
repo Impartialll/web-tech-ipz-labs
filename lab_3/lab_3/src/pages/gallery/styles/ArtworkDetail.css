@@ -1,0 +1,29 @@
+.artwork-detail {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 40px;
+}
+
+.artwork-detail img {
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.artwork-info {
+    flex: 1;
+    text-align: left;
+}
+
+.artwork-info h2 {
+    margin-bottom: 10px;
+}
+
+.artwork-info p {
+    margin: 6px 0;
+}
+
+#full-description {
+    text-align: justify;
+}

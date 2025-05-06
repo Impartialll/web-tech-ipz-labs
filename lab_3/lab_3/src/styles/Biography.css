@@ -1,0 +1,25 @@
+.container-biography {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-biography p {
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
+}
+
+.container-biography img {
+    max-width: 20%;
+    margin: 0px 50px 50px 20px;
+    transition: 0.5s;
+}
+
+.container-biography img:hover {
+    transform: scale(1.05);
+}
+
+hr {
+    border-top: 3px solid #bbb;
+}

@@ -1,0 +1,28 @@
+.page {
+    margin-top: 4rem;
+}
+
+.magic-ball {
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle at center, #111 60%, #000);
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 70px auto 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.magic-ball:hover {
+    transform: scale(1.05);
+}
+
+.answer {
+    font-size: 1.2rem;
+}
