@@ -1,0 +1,54 @@
+.edit-artwork-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.edit-artwork-form h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.edit-artwork-form input,
+.edit-artwork-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.edit-artwork-form textarea {
+    resize: vertical;
+}
+
+.edit-artwork-form span {
+    color: red;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 4px;
+}
+
+.edit-artwork-form button {
+    background-color: #2d7fff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.edit-artwork-form button:hover {
+    background-color: #185ed9;
+}

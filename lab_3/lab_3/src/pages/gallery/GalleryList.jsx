@@ -18,6 +18,7 @@ const GalleryList = () => {
             <th>Зображення</th>
             <th>Назва</th>
             <th>Опис</th>
+            <th>Редагувати</th>
             <th>Видалити</th>
           </tr>
         </thead>
@@ -32,6 +33,9 @@ const GalleryList = () => {
                 <Link to={`/gallery/${art.id}`}>{art.title}</Link>
               </td>
               <td>{art.description}</td>
+              <td>
+                <Link to={`/gallery/${art.id}/edit`}>✏️</Link>
+              </td>
               <td>
                 <button onClick={() => removeArtwork(art.id)}>❌</button>
               </td>

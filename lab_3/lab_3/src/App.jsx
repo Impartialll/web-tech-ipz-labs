@@ -12,6 +12,7 @@ import GalleryLayout from "./pages/gallery/GalleryLayout";
 import GalleryList from "./pages/gallery/GalleryList";
 import ArtworkDetail from "./pages/gallery/ArtworkDetail";
 import NewArtwork from "./pages/gallery/NewArtwork";
+import EditArtwork from "./pages/gallery/EditArtwork";
 
 import screamImg from "./assets/images/scream.png";
 import anxietyImg from "./assets/images/anxiety.png";
@@ -24,8 +25,9 @@ const initialArtworks = [
     author: "Едвард Мунк",
     year: 1893,
     description:
-    "Найвідоміша експресіоністська робота Мунка, що зображує внутрішній екзистенційний страх.",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Найвідоміша експресіоністська робота Мунка, що зображує внутрішній екзистенційний страх.",
+    fullDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     img: screamImg,
   },
   {
@@ -34,8 +36,9 @@ const initialArtworks = [
     author: "Едвард Мунк",
     year: 1894,
     description:
-    "Обличчя виражають відчай, а темні кольори — пригнічений стан.",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Обличчя виражають відчай, а темні кольори — пригнічений стан.",
+    fullDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     img: anxietyImg,
   },
   {
@@ -44,8 +47,9 @@ const initialArtworks = [
     author: "Едвард Мунк",
     year: 1897,
     description:
-    "Пара цілується, їхні обличчя зливаються в одне, символічно уособлюючи їхню єдність.",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Пара цілується, їхні обличчя зливаються в одне, символічно уособлюючи їхню єдність.",
+    fullDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     img: kissImg,
   },
 ];
@@ -72,6 +76,7 @@ function App() {
               <Route index element={<GalleryList />} />
               <Route path=":id" element={<ArtworkDetail />} />
               <Route path="new" element={<NewArtwork />} />
+              <Route path="/gallery/:id/edit" element={<EditArtwork />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
