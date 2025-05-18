@@ -25,7 +25,7 @@ export default function NewArtwork() {
     };
 
     setArtworks([...artworks, newArt]);
-    reset(); // очищення форми після додавання
+    reset();
     navigate("/gallery");
   };
 
@@ -33,17 +33,27 @@ export default function NewArtwork() {
     <div>
       <h2>Додати нову картину</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register("title")} placeholder="Назва" /><br />
-        <input {...register("author")} placeholder="Автор" /><br />
-        <input {...register("year")} type="number" placeholder="Рік написання" /><br />
-        <input {...register("description")} placeholder="Короткий опис" /><br />
+        <input {...register("title")} placeholder="Назва" />
+        <br />
+        <input {...register("author")} placeholder="Автор" />
+        <br />
+        <input
+          {...register("year")}
+          type="number"
+          placeholder="Рік написання"
+        />
+        <br />
+        <input {...register("description")} placeholder="Короткий опис" />
+        <br />
         <textarea
           {...register("fullDescription")}
           cols={30}
           rows={8}
           placeholder="Повний опис"
-        /><br />
-        <input {...register("img")} placeholder="URL зображення" /><br />
+        />
+        <br />
+        <input {...register("img")} placeholder="URL зображення" />
+        <br />
         <button type="submit">Додати</button>
       </form>
     </div>

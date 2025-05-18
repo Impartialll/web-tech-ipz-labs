@@ -23,7 +23,9 @@ export default function EditArtwork() {
   }, [artwork, reset]);
 
   const onSubmit = (data) => {
-    const updated = artworks.map((a) => (a.id === artwork.id ? { ...data, id: artwork.id } : a));
+    const updated = artworks.map((a) =>
+      a.id === artwork.id ? { ...data, id: artwork.id } : a
+    );
     setArtworks(updated);
     navigate("/gallery");
   };
@@ -39,10 +41,18 @@ export default function EditArtwork() {
       <input {...register("author", { required: true })} placeholder="Автор" />
       {errors.author && <span>Автор обов'язковий</span>}
 
-      <input type="number" {...register("year", { valueAsNumber: true })} placeholder="Рік" />
+      <input
+        type="number"
+        {...register("year", { valueAsNumber: true })}
+        placeholder="Рік"
+      />
 
       <input {...register("description")} placeholder="Короткий опис" />
-      <textarea {...register("fullDescription")} placeholder="Повний опис" rows={6} />
+      <textarea
+        {...register("fullDescription")}
+        placeholder="Повний опис"
+        rows={6}
+      />
 
       <input {...register("img")} placeholder="URL зображення" />
 
